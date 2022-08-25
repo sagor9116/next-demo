@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Raleway:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/0811542081.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Next Steps</title>
+  </head>
+  <body>
+    <!-- ================ Navigation Section Starts ================ -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Next Steps</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">our company</a></li>
+                <li><a class="dropdown-item" href="#">our vission</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">our mission</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">our people</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item signup">
+              <button class="btn nav-btn" href="#">Sign Up</button>
+            </li>
+            <li
+              class="nav-item login"
+              data-bs-toggle="modal"
+              data-bs-target="#login-modal"
+            >
+              <button class="btn nav-btn">LogIn</button>
+            </li>
+          </ul>
+
+          <!-- login modal -->
+          <div
+            class="modal fade"
+            id="login-modal"
+            tabindex="-1"
+            aria-labelledby="login-modalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="login-modalLabel">LogIn</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>Get latest update and consulting support</p>
+                  <form action="">
+                    <div>
+                      <label for="email-label" class="form-label">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email-label"
+                        placeholder="Enter your email"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="password-label" class="form-label">
+                        Password
+                      </label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password-label"
+                        placeholder="Enter your password"
+                      />
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Remember me
+                        </label>
+                      </div>
+                      <div>
+                        <span><a href="#">Forget password?</a></span>
+                      </div>
+                    </div>
+                  </form>
+
+                  <div>
+                    <a href="#">Login</a>
+                  </div>
+
+                  <div>
+                    <span>
+                      Not registered yet? <a href="#">create an account</a>
+                    </span>
+                  </div>
+                </div>
+                <!-- modal-body -->
+              </div>
+              <!-- modal-content -->
+            </div>
+            <!-- modal-dialog -->
+          </div>
+          <!-- modal(login modal) -->
+        </div>
+        <!-- navbar-collapse -->
+      </div>
+      <!-- container-fluid -->
+    </nav>
+    <!-- nav -->
+    <!-- ================ Navigation Section Ends ================ -->
+
+    <!-- ================ Hero Section Starts ================ -->
+    <section id="hero" class="bg-hero hero-section">
+      <div class="overlay"></div>
+      <div class="container text-white text-center">
+        <div class="row">
+          <div class="col-12">
+            <h1>Plan your future at abroad with us</h1>
+            <a href="#" class="btn-hero text-white" target="_blank"
+              >Learn More</a
+            >
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti, saepe blanditiis quia sunt quidem aspernatur
+                perferendis fugiat vero provident nulla?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ Hero Section Ends ================ -->
+
+    <!-- ================ Facility Section Starts ================ -->
+    <section class="facility">
+      <div class="container">
+        <h2>Our Facility</h2>
+        <div class="facility-content">
+          <div>
+            <span class="number">300+</span>
+            <h4>Universities</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et ut
+              dolores ab impedit pariatur non minima adipisci ea perspiciatis.
+            </p>
+          </div>
+
+          <div>
+            <span class="number">100%</span>
+            <h4>Dedication</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et ut
+              dolores ab impedit pariatur non minima adipisci ea perspiciatis.
+            </p>
+          </div>
+
+          <div>
+            <span class="number">1</span>
+            <h4>Step Solution</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et ut
+              dolores ab impedit pariatur non minima adipisci ea
+              perspiciatis.Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Nam et ut dolores ab impedit pariatur non minima adipisci ea
+              perspiciatis.Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Nam et ut dolores ab impedit pariatur non minima adipisci ea
+              perspiciatis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ Facility Section Ends ================ -->
+
+    <!-- ================ Assessment Section Starts ================ -->
+    <section class="assessment">
+      <div class="assessment-container">
+        <div class="container">
+          <div class="assessment-content">
+            <h3>Still not satisfied</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repellendus, suscipit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+              vero, ipsam earum odio error beatae dolore quod dignissimos enim
+              neque fugiat tenetur facere natus eius voluptates distinctio unde
+              eaque quam? Cupiditate non quidem amet est! Vitae sequi impedit
+              nemo maxime.
+            </p>
+            <a href="#" class="text-white">Book an assessment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ Assessment Section Ends ================ -->
+
+    <!-- ================ Programs Section Starts ================ -->
+    <section class="programs">
+      <div class="programs-container">
+        <div class="container d-sm-block d-flex align-items-center">
+          <div class="program-content">
+            <h2>Getting Started With Next Steps</h2>
+            <div class="programs-btn">
+              <button>
+                <a href="#">students</a>
+              </button>
+              <button>
+                <a href="#">partners schools</a>
+              </button>
+              <button>
+                <a href="#">recruitment partners</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ Programs Section Ends ================ -->
+
+    <!-- ================ Footer Section Starts ================ -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-content">
+            <div class="logo">
+              <span>Next steps</span>
+            </div>
+            <div class="footer-info">
+              <h4>Info</h4>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Notice</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Cookies policy</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Browse</h4>
+              <ul>
+                <li><a href="#">services</a></li>
+                <li><a href="#">submit form</a></li>
+                <li><a href="#">write a review</a></li>
+              </ul>
+            </div>
+            <div class="social-icons">
+              <a href="">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ================ Footer Section Ends ================ -->
+
+    <!-- bootstrap js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- main js -->
+    <source src="/js/index.js" />
+  </body>
+</html>

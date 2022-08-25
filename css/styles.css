@@ -1,0 +1,219 @@
+/* ==========================================================================
+                           Global Styles
+=========================================================================== */
+
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* colors */
+  --clr-light: #00917c;
+  --clr-dark: #035956;
+  --clr-tiber: #184d47;
+  --clr-white: #fff;
+  --clr-black: #000;
+
+  /* font sizes */
+
+  --fs-400: 1rem;
+  --fs-300: 0.875rem;
+
+  /* font-families */
+  --ff-serif: "Playfair Display SC", serif;
+  --ff-sans-serif: "Raleway", sans-serif;
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+/* Reset margins & paddings*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-weight: 400;
+}
+
+/* set up the body */
+
+body {
+  font-family: var(--ff-sans-serif);
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+/* set up links and lists */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+                           Navigation
+=========================================================================== */
+
+.navbar {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-300);
+}
+
+.nav-item {
+  letter-spacing: 2px;
+  font-size: var(--fs-300);
+  color: var(--clr-black);
+}
+
+.nav-btn {
+  display: inline-block;
+  margin: 0 10px;
+  background-color: var(--clr-light);
+
+  border-radius: 2px;
+  color: var(--clr-white);
+  font-size: var(--fs-300);
+  transition: all 0.4s ease-in;
+}
+
+.nav-btn:hover {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+
+  outline: none;
+}
+
+/* ==========================================================================
+                           Hero banner
+=========================================================================== */
+
+#hero {
+  padding: 5rem 0;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 145, 124, 0.7), rgba(3, 89, 86, 0.7));
+  z-index: -1;
+}
+.bg-hero {
+  background-image: url("/assets/img/hero-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-hero {
+  max-width: 280px;
+  background-color: #00917c;
+  padding: 8px 5px 8px;
+}
+
+.home-form-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.facility {
+  margin-top: 5rem;
+}
+
+.assessment-container {
+  background-color: var(--clr-light);
+}
+
+.programs-container {
+  margin-top: 5rem;
+  background-image: url("/assets/img/programs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 70%;
+  color: aliceblue;
+  height: 95vh;
+}
+
+.program-content {
+  padding: 2rem 0;
+}
+
+.footer-container {
+  background-color: var(--clr-dark);
+}
